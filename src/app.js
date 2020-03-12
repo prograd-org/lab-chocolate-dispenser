@@ -16,7 +16,7 @@ var chocolates = [
 //Progression 1: Add ___ chocolates of ____ color
 function addChocolates(chocolates, color, count) {
     if (count <= 0)
-        return "Number can't be zero";
+        return "number cannot be zero/negative";
 
     for (var i = 0; i < count; i++) {
         chocolates.unshift(color);
@@ -37,7 +37,7 @@ function removeChocolates(chocolates, number) {
 
     }
     if (number <= 0) {
-        return "Number can't be zero";
+        return "number cannot be zero/negative";
     }
     for (var i = 0; i < number; i++) {
         a.push(chocolates.shift());
@@ -55,7 +55,7 @@ function removeChocolates(chocolates, number) {
 function dispenseChocolates(chocolates, number) {
     let a = [];
     if (number <= 0)
-        return "Number cannot be zero";
+        return "number cannot be zero/negative";
     if (number > chocolates.length)
         return "Insufficient chocolates in the dispenser";
     for (var i = 0; i < number; i++) {
@@ -157,7 +157,7 @@ function changeChocolateColor(chocolates, number, color, finalColor) {
     if (chocolates.length == 0)
         return chocolates;
     if (number <= 0)
-        return "Number cannot be zero";
+        return "number cannot be zero/negative";
     if (number > chocolates.length)
         return "Insufficient chocolates in the dispenser";
     for (var i = 0; i < chocolates.length; i++) {
