@@ -36,19 +36,19 @@ As usual, open the `SpecRunner.html` file on your browser and start coding to pa
 
 ### Progression 1: MORE! MORE! MORE!
 
-Hundred chocolates? Not enough! We certainly need more. Create a function `addChocolates()` which takes `color, count` as arguments and adds them to the dispenser from the top.
+Hundred chocolates? Not enough! We certainly need more. Create a function `addChocolates()` which takes `chocolates,color, count` as arguments and adds them to the dispenser from the top.
 
 ### Progression 2: LESS! LESS! LESS!
 
-We have added too many chocolates and the machine has started to malfunction. Create a function `removeChocolates()` that takes `number` as an argument and _returns an array of chocolates_ that have been removed from the top.
+We have added too many chocolates and the machine has started to malfunction. Create a function `removeChocolates()` that takes `number,chocolates` as an argument and _returns an array of chocolates_ that have been removed from the top.
 
 ### Progression 3: One is not enough!
 
-Cait can't have just one chocolate a day. So our next task would be to create a function `dispenseChocolates()` that dispenses chocolate at her will. It takes `number` as an argument and _returns an array of chocolates_ from the bottom.
+Cait can't have just one chocolate a day. So our next task would be to create a function `dispenseChocolates()` that dispenses chocolate at her will. It takes `number,chocolates` as an argument and _returns an array of chocolates_ from the bottom.
 
 ### Progression 4: My favourite color is...
 
-Cait is annoyed with all the green chocolates she's been getting. Time to change things up a bit. Create a function `dispenseChocolatesOfColor()` which takes `number, color` as arugments and _return an array of chocolates_ from the bottom of the given color.
+Cait is annoyed with all the green chocolates she's been getting. Time to change things up a bit. Create a function `dispenseChocolatesOfColor()` which takes `chocolates,number, color` as arugments and _return an array of chocolates_ from the bottom of the given color.
 
 ### Progression 5: LED my chocos!
 
@@ -60,11 +60,11 @@ Cait wants to eat a lot of chocolates, but is trying to restrain herself. Theref
 
 ### Progression 7: They taste the same!
 
-Cait wants to the ability to change the color of the chocolates now. Little does she know, changing the wrapper won't change the flavor. But, well, create a function `changeChocolateColor()` which takes the arguments `number, color, finalColor` and changes n chocolates of the of color to finalColor
+Cait wants to the ability to change the color of the chocolates now. Little does she know, changing the wrapper won't change the flavor. But, well, create a function `changeChocolateColor()` which takes the arguments `chocolates,number, color, finalColor` and changes n chocolates of the of color to finalColor
 
 ### Progression 8: Convert these heretics!
 
-Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `color, finalColor` and changes all chocolates of color to finalColor. It should _return [countOfFinalColorChocolates, chocolates]_.
+Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `chocolates,color, finalColor` and changes all chocolates of color to finalColor. It should _return [countOfFinalColorChocolates, chocolates]_.
 
 
 ### Challenge 1: Fresh pickings!
