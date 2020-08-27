@@ -190,6 +190,3 @@ const removeChocolateOfColor = (chocolates, color) => {
 
 
 //Challenge 2: Dispense 1 rainbow colored colored chocolate for every 3 chocolates of the same color dispensed
-const dispenseRainbowChocolates = (number) => {
-
-}
