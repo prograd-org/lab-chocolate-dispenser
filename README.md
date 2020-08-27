@@ -44,6 +44,19 @@ We have added too many chocolates and the machine has started to malfunction. Cr
 
 ### Progression 3: One is not enough!
 
+var dispense = []
+
+    if (number <= 0)
+        return "Number cannot be zero/negative";
+    if (number > chocolates.length)
+        return "Insufficient chocolates in the dispenser";
+    
+        for(i=0;i<number;i++)
+        {
+            dispense[i]=chocolates.pop()
+        }
+        return dispense;
+
 Cait can't have just one chocolate a day. So our next task would be to create a function `dispenseChocolates()` that dispenses chocolate at her will. It takes `number,chocolates` as an argument and _returns an array of chocolates_ from the bottom.
 
 ### Progression 4: My favourite color is...
