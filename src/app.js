@@ -12,20 +12,86 @@ var chocolates = [
 ];
 
 //Progression 1: Add ___ chocolates of ____ color
-
+function addChocolates(chocolates, color, count) {
+    if (count > 0) {
+        for (var i = 0; i < count; i++)
+            chocolates.unshift(color);
+    } else {
+        return 'Number cannot be zero/negative';
+    }
+}
 
 //Progression 2: Remove ___ chocolates from the top the dispenser
 
+function removeChocolates(chocolates, number) {
+    if (number > chocolates.length) {
+        return 'Insufficient chocolates in the dispenser';
+    } else if (number > 0) {
+        var removed_chos = [];
+        for (var i = 0; i < number; i++) {
+            removed_chos[i] = chocolates.shift();
+        }
+        return removed_chos;
+    } else
+        return "Number cannot be zero/negative";
 
+}
 //Progression 3: Dispense ___ chocolates
+function dispenseChocolates(chocolates, number) {
+    if (number > chocolates.length) {
+        return 'Insufficient chocolates in the dispenser';
+    } else if (number > 0) {
+        var removed_chos = [];
+        for (var i = 0; i < number; i++) {
+            removed_chos[i] = chocolates.pop();
+        }
+        return removed_chos;
 
+    } else {
+        return 'Number cannot be zero/negative';
+    }
+
+}
 
 //Progression 4: Dispense ___ chocolates of ____ color
+function dispenseChocolatesOfColor(chocolates, number, color) {
+
+    if (number > chocolates.length) {
+        return "Insufficient chocolates in the dispenser"
+    } else if (number > 0) {
+        var colors = [];
+        var count = 0;
+        for (var i = chocolates.length; i >= 0; i--) {
+            if (chocolates[i] == color) {
+
+                colors[count++] = chocolates.pop();
+            }
+        }
+        return colors;
+    } else {
+        return "Number cannot be zero/negative";
+    }
+
+}
 
 
 //Progression 5: Display ___ chocolates of each color. Return array of numbers [green, silver, blue, crimson, purple, red, pink]
-
-
+// function noOfChocolates(chocolates) {
+//     var count = 0;
+//     var noofcandy = [];
+//     var a = 0;
+//     var candy = ["green", "silver", "blue", "crimson", "purple", "red", "pink"];
+//     while (count < candy.length) {
+//         for (var i = 0; i < chocolates.length; i++) {
+//             if (chocolates[i] == candy[count]) {
+//                 noofcandy[count] = ++a;
+//             }
+//         }
+//         count++;
+//         a = 0;
+//     }
+//     return noofcandy.filter(Number);
+// }
 //Progression 6: Sort chocolates based on count in each color. Return array of colors
 
 
