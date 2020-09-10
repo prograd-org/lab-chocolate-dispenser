@@ -46,7 +46,7 @@ function runDispenser() {
             var currentColor = prompt("Current color");
             var finalColor = prompt("Desired color");
             let returnVal = changeChocolateColor(chocolates, count, currentColor, finalColor);
-            if (typeof (returnVal) === 'string')
+            if (typeof(returnVal) === 'string')
                 console.log(returnVal);
             else
                 chocolates = returnVal;
@@ -55,7 +55,7 @@ function runDispenser() {
             var currentColor = prompt("Current color");
             var finalColor = prompt("Desired color");
             let returnArr = changeChocolateColorAllOfxCount(chocolates, currentColor, finalColor);
-            if (typeof (returnArr) === 'string')
+            if (typeof(returnArr) === 'string')
                 console.log(returnArr);
             else {
                 console.log(finalColor + " chocolates: " + returnArr[0]);
@@ -78,7 +78,7 @@ function runDispenser() {
 
 runDispenser();
 
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function(event) {
     if (event.keyCode == 67) {
         console.clear();
         runDispenser();
