@@ -7,6 +7,7 @@ Caitlyn loved chocolates and asked her mum to buy her a truck of chocolates. Her
 Cait is now on a quest to create a virtual terminal which can directly access the chocolate machine. She needs **YOU** to help her code functionalities in the back-end though. Go to the `src/app.js` file and complete all the unfinished code to satiate her sweet tooth.
 
 ## What should you do
+
 ```
 Fork this repo
 Clone this repo
@@ -14,6 +15,7 @@ Practice JavaScript Arrays - higher order function
 ```
 
 ## How To Submit
+
 ```
 Upon completion, run the following commands:
 
@@ -65,7 +67,6 @@ Cait wants to the ability to change the color of the chocolates now. Little does
 ### Progression 8: Convert these heretics!
 
 Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `chocolates,color, finalColor` and changes all chocolates of color to finalColor. It should _return [countOfFinalColorChocolates, chocolates]_.
-
 
 ### Challenge 1: Fresh pickings!
 
