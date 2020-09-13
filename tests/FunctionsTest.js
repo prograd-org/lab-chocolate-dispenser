@@ -709,16 +709,15 @@ describe("Change the color of chocolates - changeChocolateColor", function () {
 });
 
 describe("Change the color of chocolates - changeChocolateColorAllOfxCount", function () {
-  var candies = ["green", "green", "blue", "blue"];
+  var candies = ["green", "red", "blue", "blue"];
 
   it("Defines changeChocolateColorAllOfxCount", function () {
     expect(typeof changeChocolateColorAllOfxCount).toBe("function");
   });
 
   it("Change the color of  green chocolates to blue and return the array", function () {
-    var candies = ["green", "green", "blue", "blue"];
 
-    let expectedResult = [4, ["blue", "blue", "blue", "blue"]];
+    let expectedResult = [3, ["blue", "red", "blue", "blue"]];
 
     let actualResult = changeChocolateColorAllOfxCount(
       candies,
@@ -730,6 +729,7 @@ describe("Change the color of chocolates - changeChocolateColorAllOfxCount", fun
   });
 
   it("Return '[0,[]]' when called with empty chocolates array", function () {
+    
     let expectedResult = [0, []];
 
     let actualResult = changeChocolateColorAllOfxCount([], "green", "blue");
@@ -738,6 +738,8 @@ describe("Change the color of chocolates - changeChocolateColorAllOfxCount", fun
   });
 
   it("Return single array element when there is only one chocolate in the array", function () {
+    
+    
     let expectedResult = [1, ["blue"]];
 
     let actualResult = changeChocolateColorAllOfxCount(["red"], "red", "blue");
