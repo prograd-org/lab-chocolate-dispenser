@@ -718,7 +718,7 @@ describe("Change the color of chocolates - changeChocolateColorAllOfxCount", fun
   it("Change the color of  green chocolates to blue and return the array", function () {
     var candies = ["green", "green", "blue", "blue"];
 
-    let expectedResult = [4, ["blue", "blue", "blue", "blue"]];
+    let expectedResult = [2, ["blue", "blue", "blue", "blue"]];
 
     let actualResult = changeChocolateColorAllOfxCount(
       candies,
