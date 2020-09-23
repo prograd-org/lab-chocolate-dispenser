@@ -12,16 +12,62 @@ var chocolates = [
 ];
 
 //Progression 1: Add ___ chocolates of ____ color
-
+function addChocolates(chocolates, color, count) {
+    if (count <= 0) {
+        return "Number cannot be zero/negative";
+    } else {
+        for (let i = 0; i < count; i++) {
+            chocolates.unshift(color);
+        }
+    }
+}
 
 //Progression 2: Remove ___ chocolates from the top the dispenser
-
+function removeChocolates(chocolates, number) {
+    var removed = [];
+    if (number <= 0) {
+        return "Number cannot be zero/negative";
+    } else if (number > chocolates.length) {
+        return "Insufficient chocolates in the dispenser";
+    } else {
+        for (let i = 0; i < number; i++) {
+            removed[i] = chocolates.shift(number);
+        }
+        return removed;
+    }
+}
 
 //Progression 3: Dispense ___ chocolates
+function dispenseChocolates(chocolates, number) {
+    var eat = [];
+    if (number <= 0) {
+        return "Number cannot be zero/negative";
+    } else if (number > chocolates.length) {
+        return "Insufficient chocolates in the dispenser";
+    } else {
+        for (let i = 0; i < number; i++) {
+            eat[i] = chocolates.pop(number);
+        }
 
+        return eat;
+    }
+}
 
 //Progression 4: Dispense ___ chocolates of ____ color
+function dispenseChocolatesOfColor(chocolates, number, color) {
+    var eat = [];
+    if (number <= 0) {
+        return "Number cannot be zero/negative";
+    } else if (number > chocolates.length) {
+        return "Insufficient chocolates in the dispenser";
+    } else {
+        for (let i = 0; i < number; i++) {
+            eat[i] = chocolates.pop(color);
+        }
 
+        return eat;
+    }
+}
 
 //Progression 5: Display ___ chocolates of each color. Return array of numbers [green, silver, blue, crimson, purple, red, pink]
 
