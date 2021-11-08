@@ -154,6 +154,6 @@ let addChocolates = (chocolates, color, count) => {
     return [count, chocolates];
   };
   
-  //Challenge 1: Remove one chocolate of ____ color from the top
+  //Challenge 1: Remove one chocolate of ____ color from the top..
   
   //Challenge 2: Dispense 1 rainbow colored colored chocolate for every 3 chocolates of the same color dispensed
